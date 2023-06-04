@@ -15,8 +15,8 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key
 # Installation
 apt-get update
 apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
-    # ros-noetic-desktop-full
     ros-noetic-desktop
+    # ros-noetic-desktop-full
 
 # Environment setup
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc

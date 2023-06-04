@@ -18,7 +18,7 @@ set_password
 echo "Install requirement"
 
 echo "$password" | sudo -S apt-get update
-sudo aptget -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
+sudo apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
 sudo  apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
     build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev \
     libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev \

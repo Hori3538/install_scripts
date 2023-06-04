@@ -40,5 +40,5 @@ sudo apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::=
 
 # make catkin_ws
 mkdir -p ~/catkin_ws/src
-cd catkin_ws
+cd ~/catkin_ws
 catkin build

@@ -28,6 +28,7 @@ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc 
 echo "export ROS_WORKSPACE=~/catkin_ws" >> ~/.bashrc 
 echo "export ROS_PACKAGE_PATH=~/catkin_ws/src:$ROS_PACKAGE_PATH" >> ~/.bashrc 
+source ~/.bashrc
 
 # install other packages
 sudo apt install python3-osrf-pycommon python3-rosdep python3-catkin-tools

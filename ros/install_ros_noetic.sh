@@ -18,7 +18,7 @@ set_password
 echo "$password" | sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu focal main" > /etc/apt/sources.list.d/ros-latest.list'
 
 # Set up your keys
-apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"install \
+apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
     curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 

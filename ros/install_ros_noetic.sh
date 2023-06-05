@@ -36,7 +36,7 @@ source ~/.bashrc
 
 # install other packages
 sudo apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
-    python3-osrf-pycommon python3-rosdep python3-catkin-tools
+    python3-osrf-pycommon python3-rosdep python3-catkin-tools python3-pip
 
 # make catkin_ws
 mkdir -p ~/catkin_ws/src

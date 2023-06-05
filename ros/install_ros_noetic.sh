@@ -22,7 +22,7 @@ set_password()
 set_password
 
 # Setup your sources.list
-echo "$password" | sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu ${ubuntu_dev_code} main" > /etc/apt/sources.list.d/ros-latest.list'
+echo "$password" | sudo echo "deb http://packages.ros.org/ros/ubuntu ${ubuntu_dev_code} main" > /etc/apt/sources.list.d/ros-latest.list
 
 # Set up your keys
 sudo apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \

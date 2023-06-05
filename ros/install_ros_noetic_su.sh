@@ -12,7 +12,7 @@ else
 fi
 
 # Setup your sources.list
-sh -c 'echo "deb http://packages.ros.org/ros/ubuntu ${ubuntu_dev_code} main" > /etc/apt/sources.list.d/ros-latest.list'
+echo "deb http://packages.ros.org/ros/ubuntu ${ubuntu_dev_code} main" > /etc/apt/sources.list.d/ros-latest.list
 
 # Set up your keys
 apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \

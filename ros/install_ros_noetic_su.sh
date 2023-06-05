@@ -30,6 +30,6 @@ apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--fo
     python3-osrf-pycommon python3-rosdep python3-catkin-tools python3-pip
 
 # make catkin_ws
-mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws
-catkin build
+# mkdir -p ~/catkin_ws/src
+# cd ~/catkin_ws
+# catkin build

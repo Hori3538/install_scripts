@@ -45,7 +45,8 @@ sudo apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::=
     python3-osrf-pycommon python3-rosdep python3-catkin-tools python3-pip
 
 # make catkin_ws
-source ~/.bashrc
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
+source /opt/ros/noetic/setup.bash
 catkin build
+source ~/.bashrc

@@ -29,13 +29,13 @@ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc 
 echo "export ROS_WORKSPACE=~/catkin_ws" >> ~/.bashrc 
 echo "export ROS_PACKAGE_PATH=~/catkin_ws/src:$ROS_PACKAGE_PATH" >> ~/.bashrc 
-source ~/.bashrc
 
 # install other packages
 apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
     python3-osrf-pycommon python3-rosdep python3-catkin-tools python3-pip
 
 # make catkin_ws
+source ~/.bashrc
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
 catkin build

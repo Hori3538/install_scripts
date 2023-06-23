@@ -18,8 +18,9 @@ echo "$password" | sudo apt-get update
 sudo apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
     tmux
 
-echo "source $SCRIPT_DIR/tmux.conf" >> ~/.tmux.conf
-echo "source $SCRIPT_DIR/tmux.session.conf" >> ~/.tmux.session.conf
+cd ~
+git clone https://github.com/Hori3538/tmux_conf.git
+cd tmux_conf && ./reset_tmux_conf.sh
 
 echo "alias tmuxg='tmux new-session \; source-file ~/.tmux.session.conf'" >> ~/.bashrc
 source ~/.bashrc

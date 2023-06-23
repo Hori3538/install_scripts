@@ -4,8 +4,18 @@ SCRIPT_DIR=$(cd $(dirname $0); pwd)
 set -e
 export DEBIAN_FRONTEND=noninteractive
 
-apt-get update
-apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
+set_password()
+{
+    if [ ! ${password} ]
+    then
+        printf "password: "
+        read -s password
+    fi
+}
+set_password
+
+echo "$password" | sudo apt-get update
+sudo apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
     tmux
 
 echo "source $SCRIPT_DIR/tmux.conf" >> ~/.tmux.conf

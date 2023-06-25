@@ -14,8 +14,8 @@ set_password()
 }
 set_password
 
-echo "$password" | apt-get update
-apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
+echo "$password" | sudo apt-get update
+sudo apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
     wget
 
 

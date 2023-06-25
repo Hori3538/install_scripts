@@ -18,7 +18,11 @@ ln -sf /nvim-linux64/bin/nvim  /usr/bin/nvim
 curl -fsSL https://deb.nodesource.com/setup_20.x | bash - &&\
 apt-get install -y nodejs
 
-cd ~/.config
+CONFIGDIR=~/.config
+if [ ! -d $CONFIGDIR ]; then
+  mkdir $CONFIGDIR
+fe
+cd CONFIGDIR
 git clone https://github.com/Hori3538/nvim.git
 
 

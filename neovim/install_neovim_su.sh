@@ -21,7 +21,7 @@ apt-get install -y nodejs
 CONFIGDIR=~/.config
 if [ ! -d $CONFIGDIR ]; then
   mkdir $CONFIGDIR
-fe
+fi
 cd CONFIGDIR
 git clone https://github.com/Hori3538/nvim.git
 

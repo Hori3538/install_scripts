@@ -6,7 +6,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 apt-get update
 apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
-    nodejs
+    nodejs wget
 
 cd ${SCRIPT_DIR}
 wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz

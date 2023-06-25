@@ -9,8 +9,8 @@ apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--fo
     nodejs
 
 cd ${SCRIPT_DIR}
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage
+curl https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
+tar xzvf nvim-linux64.tar.gz
 ln -s ./nvim.appimage  /usr/bin/nvim
 
 cd ~/.config

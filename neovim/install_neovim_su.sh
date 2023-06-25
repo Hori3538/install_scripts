@@ -22,7 +22,7 @@ CONFIGDIR=~/.config
 if [ ! -d $CONFIGDIR ]; then
   mkdir $CONFIGDIR
 fi
-cd CONFIGDIR
+cd $CONFIGDIR
 git clone https://github.com/Hori3538/nvim.git
 
 

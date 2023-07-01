@@ -16,5 +16,5 @@ cd ~
 git clone https://github.com/Hori3538/vim_conf.git
 cd vim_conf && ./reset_vim_conf.sh
 
-echo "alias v=vim" >> ~/.bashrc
+echo "alias v='vim'" >> ~/.bashrc
 source ~/.bashrc

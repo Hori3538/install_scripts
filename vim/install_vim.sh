@@ -15,7 +15,10 @@ set_password()
 set_password
 
 echo "$password" | sudo apt-get update
+sudo apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
+    software-properties-common
 sudo add-apt-repository ppa:jonathonf/vim
+sudo apt-get update
 sudo apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
     vim
 
